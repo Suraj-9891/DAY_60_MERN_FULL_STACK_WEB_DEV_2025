@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captcha Verification</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Captcha Verification</h1>
+        <p>Verify you're human by entering the CAPTCHA shown below.</p>
+    </header>
+
+    <div class="container">
+        <div class="form-group">
+            <div id="captcha" class="captcha"></div>
+            <button onclick="refreshCaptcha()">Refresh CAPTCHA</button>
+        </div>
+
+        <div class="form-group">
+            <label for="captcha-input">Enter CAPTCHA</label>
+            <input type="text" id="captcha-input" placeholder="Type here...">
+        </div>
+
+        <div class="form-group">
+            <button onclick="validateCaptcha()">Submit</button>
+        </div>
+
+        <div id="feedback" class="feedback"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Captcha Generator. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

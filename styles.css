@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #4be0c2;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #6200ea;
+    color: #fff;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 1rem;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.captcha {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+    color: #333;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 10px 0;
+    user-select: none;
+}
+
+.captcha:hover {
+    background: linear-gradient(45deg, #ff758c, #ff7eb3);
+}
+
+input[type="text"] {
+    width: calc(100% - 50px);
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #6200ea;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3700b3;
+}
+
+.feedback {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: green;
+}
+
+.error {
+    color: red;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #6200ea;
+    color: #fff;
+    margin-top: 250px;
+}
+
+@media (max-width: 600px) {
+    input[type="text"] {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
